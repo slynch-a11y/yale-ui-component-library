@@ -1,0 +1,5 @@
+_site/*
+package-lock.json
+package.json
+docs/assets/*
+dist/*

@@ -1,0 +1,56 @@
+{
+  "name": "yale-ui-component-library",
+  "version": "1.0.0",
+  "description": "Yale's UI Component Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --load-path node_modules src/scss/main.scss:dist/css/yale-ui.css",
+    "develop": "npx @11ty/eleventy --serve",
+    "pretty": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
+    "axe": "node axe.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "axe http://localhost:8080/ --exit"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/yale-a11y/yale-ui-component-library.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "accessibility",
+    "higher education"
+  ],
+  "author": "Yale ITS Digital Accessibility Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/yale-a11y/yale-ui-component-library/issues"
+  },
+  "homepage": "https://gitlab.com/yale-a11y/yale-ui-component-library#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@axe-core/webdriverjs": "^4.1.1",
+    "chromedriver": "^89.0.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-zip": "^5.1.0",
+    "husky": "^5.2.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8"
+  }
+}
