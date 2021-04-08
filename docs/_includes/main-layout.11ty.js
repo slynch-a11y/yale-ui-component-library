@@ -18,15 +18,16 @@ exports.render = function (data) {
         <div class="row">
           <!-- Sidebar Navigation -->
           <div class="col-lg-4">
-          <ul>
+                         <ul>
           ${data.collections.component
-    .map(
-      (component) => `<li><a href="${component.url}">${component.data.title}</a></li>`,
-    )
-    .join('\n')}
+            .map(
+              (component) =>
+                `<li><a href="${component.url}">${component.data.title}</a></li>`
+            )
+            .join('\n')}
         </ul>
           </div><!-- Main Content -->
-          <div class="col-lg-8">
+          <div class="col-lg-8" id="component">
            ${data.content}
           </div>
 

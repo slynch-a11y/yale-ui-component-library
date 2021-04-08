@@ -8,6 +8,9 @@ dist/scss/*
 ### Eleventy ###
 _site
 
+### Test Results ###
+tests/*
+
 ### Other ###
 .DS_Store
 .idea/
