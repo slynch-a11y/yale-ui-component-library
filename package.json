@@ -7,13 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch --load-path node_modules src/scss/main.scss:dist/css/yale-ui.css",
     "develop": "npx @11ty/eleventy --serve",
-    "pretty": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "axe": "node axe.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "axe http://localhost:8080/ --exit"
-    }
+    "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
+    "cypress": "npx cypress open"
   },
   "files": [
     "dist/**/*"
@@ -40,6 +35,8 @@
     "@11ty/eleventy": "^0.12.1",
     "@axe-core/webdriverjs": "^4.1.1",
     "chromedriver": "^89.0.0",
+    "cypress": "^6.0.0",
+    "cypress-axe": "^0.12.2",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
