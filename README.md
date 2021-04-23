@@ -4,7 +4,7 @@ The Yale UI Component Library, based on Bootstrap 5, created to help designers a
 
 ## Steps to Develop Locally
 
-### Fork or clone the repo
+### Clone the repo
 
 ```
 git clone https://gitlab.com/yale-a11y/yale-ui-component-library.git
