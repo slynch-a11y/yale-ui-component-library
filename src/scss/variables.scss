@@ -403,11 +403,25 @@ $aspect-ratios: (
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
+/**
+ * ------------------------------------------------------------------------
+ * Additional code for Typography to use Yale's fonts (Mallory and YaleNew)
+ $font-family-mallory is using Mallory light for the body text
+ $font-family-mallory-semi is using Mallory medium for bolder text used in labels, etc.
+ $font-family-yale is using YaleNew as a serif font for headings
+ $font-family-sans-serif was changed to using $font-family-mallory
+ $font-family-serif variable was added to use the YaleNew serif font
+ more text styles can be found in scss/components/_text.scss
+ * ------------------------------------------------------------------------
+ */
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
-  'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-mallory: 'Mallory', 'Gill Sans', 'Gill Sans MT', Calibri,
+  sans-serif;
+$font-family-mallory-semi: 'Mallory-Medium', 'Gill Sans', 'Gill Sans MT',
+  Calibri, sans-serif;
+$font-family-yale: 'YaleNew', Georgia, 'Times New Roman', serif;
+$font-family-sans-serif: $font-family-mallory !default;
+$font-family-serif: $font-family-yale !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 // stylelint-enable value-keyword-case
