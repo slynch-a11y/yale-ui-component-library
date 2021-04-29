@@ -1,0 +1,48 @@
+.text-monospace {
+  font-family: $font-family-monospace !important;
+}
+.text-font-family-sans-serif {
+  font-family: $font-family-sans-serif !important;
+}
+.text-font-family-serif {
+  font-family: $font-family-serif !important;
+}
+.text-font-family-mallory {
+  font-family: $font-family-mallory !important;
+}
+.text-font-family-mallory-semi {
+  font-family: $font-family-mallory-semi !important;
+}
+.text-font-family-yale {
+  font-family: $font-family-yale !important;
+}
+
+.text-font-family-sans-italic {
+  font-family: 'Mallory-LightItalic', 'Gill Sans', 'Gill Sans MT', Calibri,
+    sans-serif !important;
+  font-style: italic;
+}
+
+.text-font-family-sans-medium {
+  font-family: 'Mallory-Medium', 'Gill Sans', 'Gill Sans MT', Calibri,
+    sans-serif !important;
+}
+
+.text-font-family-sans-bold {
+  font-family: 'Mallory-Bold', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif !important;
+}
+
+.text-font-family-serif-bold {
+  font-family: 'YaleNew-Bold', Georgia, 'Times New Roman', serif !important;
+}
+
+.text-font-family-serif-italic {
+  font-family: 'YaleNew-Italic', Georgia, 'Times New Roman', serif !important;
+  font-style: italic;
+}
+
+.text-font-family-serif-bold-italic {
+  font-family: 'YaleNew', Georgia, 'Times New Roman', serif !important;
+  font-weight: bold;
+  font-style: italic;
+}

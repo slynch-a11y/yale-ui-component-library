@@ -7,6 +7,7 @@ exports.render = function (data) {
   <title>${data.title}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/dist/css/yale-ui.css">
+  <link rel="stylesheet" href="/assets/css/yale-ui-docs-fonts.css">
   <script src="https://use.fontawesome.com/515a2135e3.js"></script>
 </head>
 <body>

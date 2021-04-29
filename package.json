@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch --load-path node_modules src/scss/main.scss:dist/css/yale-ui.css",
+    "sass": "sass --watch src/scss/main.scss:_site/dist/css/yale-ui.css",
     "develop": "npx @11ty/eleventy --serve",
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
     "cypress": "npx cypress open"
@@ -28,13 +28,9 @@
     "url": "https://gitlab.com/yale-a11y/yale-ui-component-library/issues"
   },
   "homepage": "https://gitlab.com/yale-a11y/yale-ui-component-library#readme",
-  "dependencies": {
-    "bootstrap": "^5.0.0-beta2"
-  },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@axe-core/webdriverjs": "^4.1.1",
-    "chromedriver": "^89.0.0",
+    "bootstrap": "^5.0.0-beta2",
     "cypress": "^6.0.0",
     "cypress-axe": "^0.12.2",
     "eslint": "^7.23.0",
