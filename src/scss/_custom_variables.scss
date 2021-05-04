@@ -1,0 +1,12 @@
+// Typography Overrides
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-mallory: 'Mallory', 'Gill Sans', 'Gill Sans MT', Calibri,
+  sans-serif;
+$font-family-mallory-semi: 'Mallory-Medium', 'Gill Sans', 'Gill Sans MT',
+  Calibri, sans-serif;
+$font-family-yale: 'YaleNew', Georgia, 'Times New Roman', serif;
+$font-family-sans-serif: $font-family-mallory;
+$font-family-serif: $font-family-yale;
+
+$headings-font-family: $font-family-yale;
