@@ -30,6 +30,7 @@
   "homepage": "https://gitlab.com/yale-a11y/yale-ui-component-library#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "axe-core": "^4.1.4",
     "bootstrap": "^5.0.0-beta2",
     "cypress": "^6.0.0",
     "cypress-axe": "^0.12.2",
