@@ -4,33 +4,27 @@ The Yale UI Component Library, based on Bootstrap 5, created to help designers a
 
 ## Steps to Develop Locally
 
-### Clone the repo
+### Clone the repo 🧬
 
 ```
-git clone https://gitlab.com/yale-a11y/yale-ui-component-library.git
+git clone https://github.com/Yale-A11y/yale-ui-component-library
 ```
 
-### Install the packages
+### Install the packages 📦
 
 ```
 npm install
 
 ```
 
-### Start the development environment
+### Start the development environment and watch for Sass changes 💻
 
 ```
 npm run develop
 ```
 
-### Watch for Sass changes
+### Test with Cypress ✔️
 
 ```
-npm run sass
-```
-
-### Test with Cypress
-
-```
-npm run cypress
+npm test
 ```

@@ -4,18 +4,17 @@
   "description": "Yale's UI Component Library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress open",
     "sass": "sass --watch src/scss/main.scss:_site/dist/css/yale-ui.css",
-    "develop": "npx @11ty/eleventy --serve",
-    "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "cypress": "npx cypress open"
+    "develop": "concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\""
   },
   "files": [
     "dist/**/*"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/yale-a11y/yale-ui-component-library.git"
+    "url": "https://github.com/Yale-A11y/yale-ui-component-library"
   },
   "keywords": [
     "bootstrap",
@@ -32,7 +31,8 @@
     "@11ty/eleventy": "^0.12.1",
     "axe-core": "^4.1.4",
     "bootstrap": "^5.0.0-beta2",
-    "cypress": "^6.0.0",
+    "concurrently": "^6.1.0",
+    "cypress": "^7.5.0",
     "cypress-axe": "^0.12.2",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
