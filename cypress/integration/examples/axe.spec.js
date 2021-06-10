@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 const localPath = 'http://localhost:8080/components/';
 const urlList = [
   'accessible-flyout-menu',
@@ -37,9 +38,7 @@ for (let i = 0; i < urlList.length; i++) {
 pages.forEach((page) => {
   describe(page.replace('http://localhost:8080/components/', ''), () => {
     it('should be accessible', () => {
-      cy.visit(page);
-      cy.injectAxe();
-      cy.checkA11y();
+      cy.checkPageA11y(page);
     });
   });
 });
