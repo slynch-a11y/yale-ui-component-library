@@ -35,10 +35,17 @@ for (let i = 0; i < urlList.length; i++) {
   pages.push(localPath + currentPage);
 }
 
-pages.forEach((page) => {
-  describe(page.replace('http://localhost:8080/components/', ''), () => {
-    it('should be accessible', () => {
-      cy.checkPageA11y(page);
-    });
+// pages.forEach((page) => {
+//   describe(page.replace('http://localhost:8080/components/', ''), () => {
+//     it('should be accessible', () => {
+//       cy.checkPageA11y(page);
+//     });
+//   });
+// });
+
+
+describe(('http://localhost:8080/components/jumbotron'), () => {
+  it('should be accessible', () => {
+    cy.checkPageA11y('http://localhost:8080/components/jumbotron');
   });
 });
