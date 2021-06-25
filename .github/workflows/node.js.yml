@@ -16,8 +16,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          run: npm ci
-          style: npm sass
+          install: npm ci
+          wait-on: npm sass
           start: npm serve
           spec: cypress/integration/axe.spec.js
 
